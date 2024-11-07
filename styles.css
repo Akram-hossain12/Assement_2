@@ -124,13 +124,17 @@ a:hover {
 
 .banner-section{
  background-color: #222222;
+ background: radial-gradient(circle , rgb(221, 221, 221),black);
+
 }
 
 .banner{
   width: 1200px;
   height: 580px;
   margin: auto;
-  display: flex; 
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  
 }
 .banner-text{
  text-align: start;
@@ -174,6 +178,80 @@ a:hover {
   width: 224px;
   border-radius: 24px;
 }
+.banner-img img{
+  position: relative;
+}
+.img-text .img-text-one{
+  position: absolute;
+  top: 200px;
+right: 30px;
+  bottom: 0;
+  background-color:#a6a6a6;
+  opacity: 0.5;
+  height: 100px;
+  padding: 20px;
+ border-radius: 30px;
+}
+.img-text-one h1{
+  font-size: 30px;
+  font-weight: 700;
+  font-style: italic;
+  color: aliceblue;
+}
+.red-curcal{
+  height: 30px;
+  width: 30px;
+  background-color: #E6533C;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.img-text-two{
+  display: flex;
+  position: absolute;
+  top:530px;
+  right: 330px;
+  background-color: 	#a6a6a6;
+  opacity: 0.4;
+  height: 100px;
+  padding: 20px;
+ border-radius: 30px;
+}
 section {
 
+}
+
+/* change-habite-section-css */
+
+.change-section{
+  margin-top: 40px;
+  text-align: center;
+}
+.habite-cards{
+  margin-top: 130px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 1060px;
+  margin: auto;
+}
+.habite-text h1{
+  font-size: 36px;
+  color: rgb(148, 147, 147);
+  margin-bottom: 12px;
+  
+
+}
+.habite-text p{
+  font-size: 18px;
+  color: #a6a6a6;
+  margin-bottom: 40px;
+}
+.movement img{
+  border-radius: 50%;
+}
+.movement{
+  color: white;
+}
+.movement h1{
+  margin: 25px 0;
 }
