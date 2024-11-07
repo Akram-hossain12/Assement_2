@@ -4,21 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stay healthy _With Fitness.com</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="logo">Fitness</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#trainings">Trainings</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#contact">Contact</a></li>
+    <link rel="stylesheet" href="./styles.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+      <nav>
+        <!-- Checkbox for toggling menu -->
+        <input type="checkbox" id="check">
+    
+        <!-- Menu icon -->
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+    
+        <!-- Site logo -->
+        <label class="logo">Fitness</label>
+    
+        <!-- Navigation links -->
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Feedback</a></li>
         </ul>
-        <div class="hamburger" onclick="toggleMenu()">
-            &#9776;
+      </nav>
+    
+      
+      <section class="banner-section">
+        <div class="banner">
+          <div class="banner-text">
+            <h1 class="text-header">Get body in <span class="shape">shape</span> & stay healthy</h1>
+            <p class="text-sub">A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!</p>
+              <div class="banner-btn">
+               <button class="btn-one">Join club now</button>
+               <button class="btn-two">Download app</button>
+              </div>
+          </div>
+          <div>
+             <img src="./images/Images 2.png" alt="">
+          </div>
         </div>
-    </nav>
-</body>
-</html>
+   
+      </section>
+    </body>
+    
+    </html>
