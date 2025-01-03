@@ -80,7 +80,11 @@ a:hover {
 }
 
 /* Responsive media query code for small screen */
-@media (max-width: 890px) {
+@media (max-width: 760px) {
+
+  .nav{
+    width: 100%;
+  }
   .checkbtn {
     display: block;
   }
@@ -91,7 +95,7 @@ a:hover {
 
   ul {
     position: fixed;
-    width: 100%;
+    width: 50%;
     height: 100vh;
     background: #2c3e50;
     top: 80px;
@@ -129,13 +133,14 @@ a:hover {
 }
 
 .banner{
-  width: 1200px;
+  width: 100%;
   height: 580px;
   margin: auto;
   display: grid;
   grid-template-columns: 2.5fr 1fr;
   
 }
+
 .banner-text{
  text-align: start;
  padding: 130px 40px;
@@ -145,6 +150,7 @@ a:hover {
  color: white;
  font-size: 68px;
 }
+
 .shape{
   font-family: "Cedarville Cursive", cursive;
   font-weight: 400;
@@ -154,6 +160,23 @@ a:hover {
   font-size: 16px;
   color: #bebebe;
   margin: 30px 0;
+}
+
+@media (max-width: 768px){
+  .banner{
+    width: 100%;
+    height: 1520px;
+    grid-template-columns: 1fr;
+  }
+
+  .text-header{
+    font-style: 46px;
+  }
+
+  .text-sub{
+    color: black;
+  }
+
 }
 .btn-one{
   background-color: #E6533C;
@@ -178,6 +201,8 @@ a:hover {
   width: 224px;
   border-radius: 24px;
 }
+
+
 .banner-img img{
   position: relative;
 }
@@ -210,13 +235,44 @@ right: 30px;
   position: absolute;
   top:530px;
   right: 330px;
-  background-color: 	#a6a6a6;
+  background-color:#a6a6a6;
   opacity: 0.4;
   height: 100px;
   padding: 20px;
  border-radius: 30px;
 }
-section {
+
+@media (max-width: 760px){
+  .banner{
+    width: 100%;
+    height: 1520px;
+    grid-template-columns: 1fr;
+  }
+
+  .text-header{
+    font-style: 46px;
+  }
+
+  .text-sub{
+    color: black;
+  }
+.btn-two{
+  margin-top: 30px;
+}
+.banner-img img{
+  position: relative;
+}
+.img-text .img-text-one{
+  position: absolute;
+  top: 200px;
+  right: 30px;
+  bottom: 0;
+  background-color:#a6a6a6;
+  opacity: 0.5;
+  height: 100px;
+  padding: 20px;
+  border-radius: 30px;
+}
 
 }
 
@@ -235,6 +291,7 @@ section {
   width: 1044px;
   margin: auto;
 }
+
 .habite-text h1{
   font-size: 36px;
   color: rgb(148, 147, 147);
@@ -256,7 +313,22 @@ section {
 .movement h1{
   margin: 25px 0;
 }
+@media only screen and (max-width: 768px) {
+  .change-section{
+    margin-top: 150px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .habite-cards{
+    margin-top: 130px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    width:100%;
+    margin: auto;
+  }
 
+}
 /* extra-section-css */
 
 .extra-section{
@@ -286,9 +358,27 @@ section {
   height: 312px;
   width: 366px;
   border-radius: 23px;
- margin-top: 34px;
+  margin-top: 34px;
 }
+@media only screen and (max-width:768px){
+  .extra-section{
+    width: 100%;
+   display: grid;
+   grid-template-columns: 1fr;
+   display: flex;
+   flex-direction: column-reverse;
+   
+   
+  }
 
+  .extra-section img{
+    height: 312px;
+    width: 366px;
+    border-radius: 23px;
+    margin-top: 34px;
+    margin-left: 50px;
+  }
+}
 /* training-section-css */
 
 .training-section{
@@ -461,6 +551,51 @@ section {
   margin-top: 40px;
   margin-left: 120px;
 }
+@media only screen and (max-width:768px){
+
+  .training-section{
+    width: 90%;
+    margin: auto;
+    color: white;
+    margin-top: 67px;
+    margin-bottom: 50px;
+     margin-left: 50px;
+     margin-right: 50px;
+  
+  }
+  .training-section-img{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+  }
+  .tr-img-one{
+    width: 390px;
+    height: 242px;
+  }
+  .tr-img-two{
+    width: 390px;
+    height: 242px;
+  }
+
+  .tr-img-three{
+    width: 390px;
+    height: 242px;
+  }
+  .tr-img-four{
+    width: 390px;
+    height: 242px;
+  }
+  .tr-img-five{
+    width: 390px;
+    height: 242px;
+    margin-left: 2px;
+  }
+  .tr-img-six{
+    width: 390px;
+    height: 242px;
+    margin-left: 2px;
+  }
+}
  /* BMI section css */
 
  .bmi-text{
@@ -469,6 +604,7 @@ section {
    color: white;
    margin-bottom: 80px;
  }
+
  .bmi-text h1{
   font-size: 36px;
   margin-bottom: 12px;
@@ -553,7 +689,15 @@ button:hover {
     flex-direction: column;
   }
 }
-
+@media screen and (max-width: 768px){
+  .bmi-text{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+ }
  /* team-section-css */
 
 .team-section {
@@ -618,7 +762,12 @@ button:hover {
 
 @media (max-width: 768px) {
   .team-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .team-member img {
+    width: 450px;
+    height: 272px;
   }
 }
 
